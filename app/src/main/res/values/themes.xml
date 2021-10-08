@@ -13,4 +13,23 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.Autentificazone.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Autentificazone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Autentificazone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MyButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="shapeAppearance">@style/MyShapeAppearance</item>
+    </style>
+    <style name="MyShapeAppearance">
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">16dp</item>
+
+    </style>
 </resources>
