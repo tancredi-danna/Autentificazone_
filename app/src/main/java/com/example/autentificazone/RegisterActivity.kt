@@ -15,6 +15,13 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+
+        mBinding.tvRegister.setOnClickListener{
+            val intent = Intent(this, LoginAcrtivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+
+        }
         mBinding.btnLogin.setOnClickListener {
 
             when{
